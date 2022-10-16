@@ -1,0 +1,15 @@
+class CreateAppointment < ActiveRecord::Migration
+def change
+  create_table :appointment do |t|
+    t.string :client
+    t.integer :client
+    t:timestamp :date
+  end
+
+  create_table :client do |t|
+    t.integer :id
+    t.string :name
+    t.integer :card
+  end
+end
+end
